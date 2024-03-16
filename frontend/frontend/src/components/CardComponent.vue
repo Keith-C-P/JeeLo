@@ -10,21 +10,21 @@
 </template>
 
 <script>
-import { Card } from 'primevue/card';
+import { Card } from "primevue/card";
 
 export default {
   components: {
-    Card
+    Card,
   },
   props: {
     title: {
       type: String,
-      required: true
+      required: true,
     },
     content: {
       type: String,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>

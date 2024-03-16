@@ -16,26 +16,24 @@
 </template>
 
 <script>
-import Sidebar from 'primevue/Sidebar'; //idk why this is not working
+import { Sidebar } from "primevue/sidebar";
 
 export default {
   components: {
-    Sidebar
+    Sidebar,
   },
   data() {
     return {
-      visible: false
-    }
+      visible: false,
+    };
   },
   methods: {
     toggle() {
       this.visible = !this.visible;
     },
-    goToProfile() {
-
-    }
-  }
-}
+    goToProfile() {},
+  },
+};
 </script>
 
 <style scoped>

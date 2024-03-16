@@ -4,23 +4,29 @@
     <div class="content">
       <h1>JeeLo</h1>
       <div class="cards">
-        <Card 
-        title="MCQ System" 
-        content="Click to go to MCQ System" @click="goToMCQ" />
-        <Card 
-        title="Flash Card System" 
-        content="Click to go to Flash Card System" @click="goToFlashCard" />
-        <Card 
-        title="Mental Health System" 
-        content="Click to go to Mental Health System" @click="goToMentalHealth" />
+        <Card
+          title="MCQ System"
+          content="Click to go to MCQ System"
+          @click="goToMCQ"
+        />
+        <Card
+          title="Flash Card System"
+          content="Click to go to Flash Card System"
+          @click="goToFlashCard"
+        />
+        <Card
+          title="Mental Health System"
+          content="Click to go to Mental Health System"
+          @click="goToMentalHealth"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Sidebar from './components/Sidebar.vue';
-import Card from './components/Card.vue';
+import Sidebar from "./components/SidebarComponent.vue";
+import Card from "./components/CardComponent.vue";
 
 export default {
   components: {
@@ -55,3 +61,4 @@ export default {
   justify-content: space-between;
 }
 </style>
+./components/CardComponent.vue./components/SidebarComponent.vue

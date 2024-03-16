@@ -1,33 +1,22 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true
-  },
-  extends: [
-    'standard',
-    'plugin:vue/vue3-essential'
-  ],
-  overrides: [
-    {
-      env: {
-        node: true
-      },
-      files: [
-        '.eslintrc.{js,cjs}'
-      ],
-      parserOptions: {
-        sourceType: 'script'
-      }
-    }
-  ],
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    ecmaVersion: 'latest',
+    parser: '@babel/eslint-parser',
+    ecmaVersion: 2017,
     sourceType: 'module'
   },
   plugins: [
-    'vue'
+    'prettier',
+    'vue',
+  ],
+  extends: [
+    'plugin:vue/essential',
+    'plugin:prettier/recommended',
   ],
   rules: {
-  }
-}
+    'prettier/prettier': ['error', {
+      endOfLine: 'auto',
+    }],
+    'linebreak-style': 'off', // turn off ESLint's handling of linebreaks
+  },
+};
